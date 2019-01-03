@@ -9,12 +9,13 @@ public class Graph extends JFrame
 {
     Model model;
     View view;
-    int numOfVert = 5;
+    int numOfVert = 15;
 
     public Graph(){
         model = new Model();
         model.randomVertices(numOfVert);
-        model.allEdges();
+        model.randomEdges();
+        //model.allEdges();
         view = new View(model);
 
         this.setTitle("Graph!");
