@@ -1,7 +1,4 @@
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-import java.awt.Graphics;
 import java.awt.Toolkit;
 
 
@@ -16,6 +13,8 @@ public class Graph extends JFrame
         model.randomVertices(numOfVert);
         model.randomEdges();
         //model.allEdges();
+
+        model.BFS(0, 2);
         view = new View(model);
 
         this.setTitle("Graph!");
